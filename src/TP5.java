@@ -26,8 +26,7 @@ public class TP5 {
                 System.out.println("Vous n'avez pas rentré de chiffre entier");
                 scan.nextLine();
             }
-        }
-        while (c == null ) {
+        }while (c == null ) {
             try {
                 System.out.println("Entrez la troisième valeur");
                 c = scan.nextInt();

@@ -6,7 +6,8 @@ public class TP4 {
     public static void typeOfNumber() {
         Scanner scan = new Scanner(System.in);
         Integer number = null;
-        
+        boolean isPositive = false;
+        boolean isEven = false;
 
         while (number == null) {
             try {
@@ -17,17 +18,19 @@ public class TP4 {
                 scan.nextLine();
             }
         }
-    
-        boolean isEven = number%2 == 0;
 
-        if (number >= 0) {
-            System.out.printf(number + " est positif et %s", (isEven?"pair":"impair"));
+        if (number >= 0 && number%2 == 0) {
+            System.out.println(number + " est positif et pair");
         }
-        if (number < 0) {
-            System.out.printf(number + " est négatif et %s", (isEven?"pair":"impair"));
+        if (number >= 0 && number%2 != 0) {
+            System.out.println(number + " est positif et impair");
         }
-
-        scan.close();
+        if (number < 0 && number%2 == 0) {
+            System.out.println(number + " est négatif et pair");
+        }
+        if (number < 0 && number%2 != 0) {
+            System.out.println(number + " est négatif et impair");
+        }
 
 
     }

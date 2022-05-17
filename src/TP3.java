@@ -47,12 +47,8 @@ public class TP3 {
 
         System.out.println(String.format("Les valeurs entrées sont: a = %d, b = %d, c = %d", a, b, c));
 
-        scan.close();
-
 
     }
-
-
 
 
 }

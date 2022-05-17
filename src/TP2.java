@@ -14,7 +14,7 @@ public class TP2 {
             try {
 
                 System.out.println("Quel est votre nom?");
-                nom = scanner.next();
+                nom = scanner.nextLine();
                 if (nom.matches("^[0-9]*$")) {
                     nom = null;
                 }
@@ -28,7 +28,7 @@ public class TP2 {
             try {
 
                 System.out.println("Quel est votre prénom?");
-                prenom = scanner.next();
+                prenom = scanner.nextLine();
                 if (prenom.matches("^[0-9]*$")) {
                     prenom = null;
                 }
@@ -50,7 +50,6 @@ public class TP2 {
         }
 
         System.out.println(String.format("Vous vous appelez %s %s, et vous avez %d ans", prenom, nom, age));
-        scanner.close();
 
 
 
