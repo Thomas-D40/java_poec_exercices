@@ -45,8 +45,21 @@ public class TP6 {
             System.out.println("Vous n'avez pas rentré de chiffre");
             scan.nextLine();
         }
-    }
-    ;
+    };
+    
+    // Alternative
+//        while(true) {
+//            try {
+//                System.out.println("Entrez un numéro de mois: ");
+//                number = scan.nextInt();
+//                if (number >= 1 && number <= 12) {
+//                    break;
+//                }
+//                System.out.println("Vous n'avez pas rentré de chiffre entre 1 et 12");
+//            } catch (InputMismatchException e) {
+//                System.out.println("Vous n'avez pas rentré de nombre entier");
+//            }
+//        }
 
         System.out.println("Vous avez demandé le mois de " + monthlist.get(number));
 
