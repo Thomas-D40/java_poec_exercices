@@ -1,28 +1,36 @@
 import java.sql.SQLOutput;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class TP6 {
 
-    private static final ArrayList<String> MONTHSLIST = new ArrayList<String>(){{
-        add("Janvier");
-        add("Février");
-        add("Mars");
-        add("Avril");
-        add("Mai");
-        add("Juin");
-        add("Juillet");
-        add("Aout");
-        add("Septembre");
-        add("Octobre");
-        add("Novembre");
-        add("Décembre");
-    }};
+//    private static final HashMap<Integer, String> MONTHSLIST = new HashMap<Integer, String>(){{
+//        put(1,"Janvier");
+//        put(2,"Février");
+//        put(3,"Mars");
+//        put(4,"Avril");
+//        put(5,"Mai");
+//        put(6,"Juin");
+//        put(7,"Juillet");
+//        put(8,"Aout");
+//        put(9,"Septembre");
+//        put(10,"Octobre");
+//        put(11,"Novembre");
+//        put(12,"Décembre");
+//    }};
 
     public static void months(){
     Scanner scan = new Scanner(System.in);
     Integer number = null;
+    
+    var monthlist = new HashMap<>();
+    String[] moisAnnee = {"Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Aout","Septembre","Octobre","Novembre","Decembre"};
+    for (int i = 0; i < moisAnnee.length; i++) {
+        monthlist.put(i+1, moisAnnee[i]);
+    }
+    
 
 
     while (number == null) {
@@ -40,7 +48,7 @@ public class TP6 {
     }
     ;
 
-        System.out.println("Vous avez demandé le mois de " + MONTHSLIST.get(number - 1));
+        System.out.println("Vous avez demandé le mois de " + monthlist.get(number));
 
         scan.close();
 
