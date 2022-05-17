@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
 
-        TP4.typeOfNumber();
+        TP5.equation();
     }
 }
