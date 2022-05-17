@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class TP6 {
 
-    private static final ArrayList<String> monthsList = new ArrayList<String>(){{
+    private static final ArrayList<String> MONTHSLIST = new ArrayList<String>(){{
         add("Janvier");
         add("Février");
         add("Mars");
@@ -40,7 +40,9 @@ public class TP6 {
     }
     ;
 
-        System.out.println("Vous avez demandé le mois de " + monthsList.get(number - 1));
+        System.out.println("Vous avez demandé le mois de " + MONTHSLIST.get(number - 1));
+
+        scan.close();
 
 
 
