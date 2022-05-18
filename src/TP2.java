@@ -49,7 +49,7 @@ public class TP2 {
             }
         }
 
-        System.out.println(String.format("Vous vous appelez %s %s, et vous avez %d ans", prenom, nom, age));
+        System.out.printf("Vous vous appelez %s %s, et vous avez %d ans", prenom, nom, age);
 
 
 
