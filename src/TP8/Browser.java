@@ -8,10 +8,6 @@ public class Browser {
 		String html = fetchWebPage(ip);
 		return html;
 	}
-	
-	
-	
-	
 	private String retrieveIP(String url) {
 		return "127.0.0.1";
 	}

@@ -17,10 +17,11 @@ public class MainEmploye {
 			
 			System.out.println("Quel est son Id?");
 			int id = input.nextInt();
+			input.nextLine();
 			System.out.println("Quel est le prénom?");
-			String prenom = input.next();
+			String prenom = input.nextLine();
 			System.out.println("Quel est le nom?");
-			String nom = input.next();
+			String nom = input.nextLine();
 			
 			employes[i] = new Employe(id, prenom, nom);
 			
@@ -29,7 +30,12 @@ public class MainEmploye {
 		
 		}
 		
-		System.out.println();
+//		System.out.println(Arrays.toString(employes));
+		
+		for (int i = 0; i < employes.length; i++) {
+			System.out.println("Employé["+i+"] : " + employes[i].getFirstName());
+		}
+		
 		
 //		String[] fruits=new String[3];
 //		fruits[0]="pommes";

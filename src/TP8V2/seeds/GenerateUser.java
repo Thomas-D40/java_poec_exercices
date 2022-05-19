@@ -1,4 +1,6 @@
-package TP8V2;
+package TP8V2.seeds;
+
+import TP8V2.models.User;
 
 import java.util.ArrayList;
 

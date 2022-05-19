@@ -1,4 +1,4 @@
-package TP8V2;
+package TP8V2.models;
 
 import java.util.UUID;
 

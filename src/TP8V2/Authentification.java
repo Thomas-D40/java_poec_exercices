@@ -1,6 +1,8 @@
 package TP8V2;
 
 
+import TP8V2.models.User;
+
 import java.util.ArrayList;
 
 public class Authentification {

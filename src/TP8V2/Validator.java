@@ -7,7 +7,7 @@ public class Validator {
 		return Pattern.matches(".+@.+\\..+", email);
 	}
 	
-	public static boolean isLength(String password){
-		return Pattern.matches(".{8,20}", password);
+	public static boolean isLength(String str, int min, int max){
+		return (str.length() >= min || str.length()<= max);
 	}
 }

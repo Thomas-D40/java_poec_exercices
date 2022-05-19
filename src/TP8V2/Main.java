@@ -1,5 +1,7 @@
 package TP8V2;
 
+import TP8V2.seeds.GenerateUser;
+
 import java.util.Scanner;
 
 public class Main {
@@ -34,7 +36,7 @@ public class Main {
 				try {
 					System.out.println("Quel est votre mot de passe?");
 					password = scan.nextLine();
-					if (!Validator.isLength(password)) {
+					if (!Validator.isLength(password,8,20)) {
 						System.out.println("Le mot de passe doit avoir entre 8 et 20 caractères");
 						password = null;
 					}
@@ -60,4 +62,6 @@ public class Main {
 		}
 			
 	}
+	
+	
 }
